@@ -8,7 +8,7 @@ if(Test-Path -Path $git_path){
 }
 cd $project_path
 git init
-echo "# $repo_name" > README.md
+echo "# $project_name" > README.md
 git add README.md
 git commit -m "first commit"
 git branch -M main
