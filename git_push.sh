@@ -6,7 +6,7 @@ read -p "Input Git commit message: " commit_message
 if [ "$commit_message" != "q" ]; then
     cd "$project_path"
     git add ./include/*
-    git add ./source/*
+    git add ./src/*
     git add ./CMakeLists.txt
     git add ./LICENSE
     git add ./README.md
