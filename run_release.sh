@@ -8,4 +8,4 @@ cd "$target_path"
 cmake "$project_path" -D CMAKE_BUILD_TYPE=Release
 cmake --build . --config Release
 cd "$project_path"
-"$target_path/$project_name"
+"$target_path/$project_name" "$@"
