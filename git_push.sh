@@ -5,6 +5,7 @@ echo "You can input 'q' to abort."
 read -p "Input Git commit message" commit_message
 if [ "$commit_message" != "q" ]; then
     cd "$project_path"
+    git add ./include/*
     git add ./source/*
     git add ./CMakeLists.txt
     git add ./LICENSE
