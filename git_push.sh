@@ -2,7 +2,7 @@
 project_path=$(dirname "$(readlink -f "$0")")
 
 echo "You can input 'q' to abort."
-read -p "Input Git commit message" commit_message
+read -p "Input Git commit message: " commit_message
 if [ "$commit_message" != "q" ]; then
     cd "$project_path"
     git add ./include/*
