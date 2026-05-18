@@ -4,7 +4,9 @@ project_name=$(basename "$project_path")
 git_path="$project_path/.git"
 user_name="fgwsz"
 
-rm -rf "$git_path"
+if [ -d "$git_path" ]; then
+    rm -rf "$git_path"
+fi
 cd $project_path
 git init
 echo "# $project_path" > README.md
