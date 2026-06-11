@@ -9,7 +9,7 @@ if [ -d "$git_path" ]; then
 fi
 cd $project_path
 git init
-echo "# $project_path" > README.md
+echo "# $project_name" > README.md
 git add README.md
 git commit -m "first commit"
 git branch -M main
